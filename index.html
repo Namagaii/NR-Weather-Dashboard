@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
-</body>
     <header>
         <h1>Weather Dashboard</h1>
     </header>
@@ -25,44 +23,44 @@
             </nav>
         </section>
         <section id="Display-Section">
-            <section id="Todays-Display">
+            <section class="Todays-Forecast-Card" id="Todays-Display">
                 <h1><time></time><figure><img></figure></h1>
                 <p>Temp <span></span>&#176F</p> 
                 <p>Wind: <span></span> MPH</p> 
                 <p>Humidity: <span></span>%</p> 
-                <p>UV Index: <mark></mark></p> 
+                <p>UV Index: <mark class="UV-Mark"></mark></p> 
             </section>
-            <section id="5-Day-Forecast">
-                <h2></h2>
-                <article class="5-Day-Forecast-Card" id="Day-1">
+            <section id="Five-Day-Forecast">
+                <h2 id = "Five-Day-Header">5 Day Forecast</h2>
+                <article class="Five-Day-Forecast-Card" id="Day-1">
                     <time></time>
                     <figure class="Weather-Icon"><img></figure>
                     <p>Temp: <span></span>&#176F</p>
                     <p>Wind: <span></span>MPH</p>
                     <p>Humidity: <span></span>%</p>
                 </article>
-                <article class="5-Day-Forecast-Card" id="Day-2">
+                <article class="Five-Day-Forecast-Card" id="Day-2">
                     <time></time>
                     <figure class="Weather-Icon"><img></figure>
                     <p>Temp: <span></span>&#176F</p>
                     <p>Wind: <span></span>MPH</p>
                     <p>Humidity: <span></span>%</p>
                 </article>
-                <article class="5-Day-Forecast-Card" id="Day-3">
+                <article class="Five-Day-Forecast-Card" id="Day-3">
                     <time></time>
                     <figure class="Weather-Icon"><img></figure>
                     <p>Temp: <span></span>&#176F</p>
                     <p>Wind: <span></span>MPH</p>
                     <p>Humidity: <span></span>%</p>
                 </article>
-                <article class="5-Day-Forecast-Card" id="Day-4">
+                <article class="Five-Day-Forecast-Card" id="Day-4">
                     <time></time>
                     <figure class="Weather-Icon"><img></figure>
                     <p>Temp: <span></span>&#176F</p>
                     <p>Wind: <span></span>MPH</p>
                     <p>Humidity: <span></span>%</p>
                 </article>
-                <article class="5-Day-Forecast-Card" id="Day-5">
+                <article class="Five-Day-Forecast-Card" id="Day-5">
                     <time></time>
                     <figure class="Weather-Icon"><img></figure>
                     <p>Temp: <span></span>&#176F</p>
@@ -72,6 +70,7 @@
             </section>
         </section>
     </main>
+</body> 
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"

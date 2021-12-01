@@ -1,3 +1,114 @@
+:root{
+     --todays-forecast-bgcolor: blanchedalmond;
+}
+
+html {
+    overflow: hidden;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("../imgs/clouds-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 5%;
+}
+
+#Search-Section{
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Display-Section{
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10%;
+    flex-basis:  fit-content;
+    height: 100%;
+    padding: 8px;
+}
+
+#Five-Day-Forecast{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#Five-Day-Header{
+    align-self: flex-start;
+    width: 100%;
+}
+
+.Todays-Forecast-Card{
+    background-color: var(--todays-forecast-bgcolor);
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.Five-Day-Forecast-Card{
+    background-color: blanchedalmond;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 15%;
+    min-height: 75%;
+}
+
+#Search-History{
+    list-style-type: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    align-content: center;
+}
+
 .Search-History-Button{
-    border-radius: 15px;
+    min-width: 75%;
+    min-height: 25%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.UV-Mark{
+    background-color: var(--todays-forecast-bgcolor);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+#Low{
+    border: 2px solid black;
+    background-color: #3EA72D;
+}
+
+#Moderate{
+    border: 2px solid black;
+    background-color: #FFF300;
+}
+
+#High{
+    border: 2px solid black;
+    background-color: #F18B00;
+}
+
+#Very-High{
+    border: 2px solid black;
+    background-color: #E53210;
+}
+
+#Extreme{
+    border: 2px solid black;
+    background-color: #B567A4;
 }
